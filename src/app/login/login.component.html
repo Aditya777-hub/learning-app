@@ -1,0 +1,13 @@
+
+
+<div class="login-container">
+    <h1>Login</h1>
+    <form>
+        <input type="text" #txtuserid placeholder="Username" required>
+        <input type="password" #txtpassword placeholder="Password" required>
+       
+        <button (click)="login(txtuserid.value,txtpassword.value)">Login</button>
+      
+    </form>
+</div>
+

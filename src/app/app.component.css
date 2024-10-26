@@ -1,0 +1,48 @@
+.link-container {
+    display: flex;
+    gap: 145px;
+    background-color: #393535;
+    /* color: white; */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.link-container a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Link color */
+
+}
+
+.link-container a:hover{
+  text-decoration: underline;
+}
+
+
+
+  
+
+  /* Center the entire header and HTML info within the viewport */
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background-color: #f0f0f0;
+  }
+  
+  /* Style the header */
+  .header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+
+
+ 
