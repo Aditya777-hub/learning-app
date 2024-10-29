@@ -1,23 +1,26 @@
 <div class="header-container">
-    <header class="header">
-      <h1>Welcome to My Learning App</h1>
-      <p>Your go-to place for great content!</p>
-    </header>
+  <header class="header">
+    <h1>Welcome to My Learning App</h1>
+    <p>Your go-to place for great content!</p>
+  </header>
 
-    <div class="link-container">
-       
-        <a routerLink="Techno1">HTML</a>
-        <a routerLink="Techno2">CSS</a>
-        <a routerLink="Techno3">JAVASCRIPT</a>
-        <a routerLink="Techno4">TYPESCRIPT</a>
-        <a routerLink="Techno5">ANGULAR</a>
-        <a routerLink="Techno6">Java</a>
-        <a routerLink="login">Login</a>
-    </div>
-    
+
+  <div class="link-container">
+    <a routerLink="/" routerLinkActive="active" (click)="selectTab('home')">Home</a>
+    <a routerLink="Techno1" routerLinkActive="active" (click)="selectTab('HTML')">HTML</a>
+    <a routerLink="Techno2" routerLinkActive="active" (click)="selectTab('CSS')">CSS</a>
+    <a routerLink="Techno3" routerLinkActive="active" (click)="selectTab('JavaScript')">JavaScript</a>
+    <a routerLink="Techno4" routerLinkActive="active" (click)="selectTab('TypeScript')">TypeScript</a>
+    <a routerLink="Techno5" routerLinkActive="active" (click)="selectTab('Angular')">Angular</a>
+    <a routerLink="Techno6" routerLinkActive="active" (click)="selectTab('Java')">Java</a>
+    <a routerLink="login" routerLinkActive="active" (click)="selectTab('Login')">Login</a>
+  </div>
+  
+  <router-outlet></router-outlet>
+  
+  <!-- Show app-cards only if showCards is true -->
+  <app-cards *ngIf="showCards"></app-cards>
+  
+
 </div>
 
-
-
-
-<router-outlet></router-outlet>

@@ -7,11 +7,13 @@ import { Techno5Component } from './techno5/techno5.component';
 import { LoginComponent } from './login/login.component';
 import { authGuard } from './auth.guard';
 import { Techno6Component } from './techno6/techno6.component';
+import { AppComponent } from './app.component';
 
 
 export const routes: Routes = [
-{path:'',redirectTo:"Techno1",pathMatch:'full'},
+{path:'',redirectTo:"AppComponent",pathMatch:'full'},
 
+{path:'app',component:AppComponent},
 {path:'Techno1',component:Techno1Component,title:'HTML'},
 {path:'Techno2',component:Techno2Component,title:'CSS'},
 {path:'Techno3',component:Techno3Component,title:'Javascript',canActivate:[authGuard]},
