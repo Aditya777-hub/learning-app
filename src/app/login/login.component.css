@@ -1,54 +1,74 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+/* General reset and styling */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-  
+    background-color: #f4f4f9;
 }
-.login-container {
-    background-color: white;
-    padding: 20px;
+
+/* Form container styling */
+.form-box {
+    width: 1350px;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 1300px;
     text-align: center;
-    margin-top: 20px;
 }
-h1 {
-    margin-bottom: 20px;
+
+.form-title {
+    font-size: 24px;
+    font-weight: bold;
     color: #333;
+    margin-bottom: 20px;
+    display: block;
 }
-input[type="text"], input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-button {
-    background-color: #1c1d1f;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 4px;
-    width: 100%;
-}
-button:hover {
-    background-color: #434b44;
-}
-.checkbox-label {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-}
-.checkbox-label input {
-    margin-right: 5px;
-}
-.forgot-password {
+
+/* Input fields styling */
+form label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    color: #666;
     margin-top: 10px;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus {
+    border-color: #4CAF50;
+}
+
+/* Button styling */
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(37 39 70);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #040504;
 }

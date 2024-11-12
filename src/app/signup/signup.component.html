@@ -1,0 +1,11 @@
+<div class="form-box">
+    <label class="form-title">Sign Up</label>
+    <form>
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name" [(ngModel)]="signobj.Name" name="Name"><br>
+        <label>Number:</label>
+        <input type="text" placeholder="Enter your mobile number" [(ngModel)]="signobj.Mobile" name="Mobile"><br>
+        <button class="btn" (click)="SignUp()">Sign Up</button>
+    </form>
+    <button class="already-account-btn" (click)="navigateToLogin()">Already have an account?</button>
+</div>

@@ -1,13 +1,10 @@
-
-
-<div class="login-container">
-    <h1>Login</h1>
+<div class="form-box">
+    <label class="form-title">Login</label>
     <form>
-        <input type="text" #txtuserid placeholder="Username" required>
-        <input type="password" #txtpassword placeholder="Password" required>
-       
-        <button (click)="login(txtuserid.value,txtpassword.value)">Login</button>
-      
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name" [(ngModel)]="loginobj.Name" name="Name"><br>
+        <label>Number:</label>
+        <input type="text" placeholder="Enter your mobile number" [(ngModel)]="loginobj.Mobile" name="Mobile"><br>
+        <button class="btn" (click)="Login()">Login</button>
     </form>
 </div>
-

@@ -4,6 +4,71 @@
     <p>Your go-to place for great content!</p>
   </header>
 
+  <!-- Navbar with Offcanvas from Right Side -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><span>/>code</span></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarContent"
+      aria-controls="navbarContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+      </ul>
+      <!-- More Information Button that triggers the Offcanvas -->
+      <button
+        class="btn btn-outline-primary"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasMoreInfo"
+        aria-controls="offcanvasMoreInfo"
+      >
+        About App
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Offcanvas for More Information (Right Side) -->
+<div
+  class="offcanvas offcanvas-end"
+  tabindex="-1"
+  id="offcanvasMoreInfo"
+  aria-labelledby="offcanvasMoreInfoLabel"
+>
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasMoreInfoLabel"> Information About App</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex mollitia iste modi eligendi beatae sed ut dicta nihil laboriosam nemo.</p>
+    <ul>
+      <li>Details about the app</li>
+      <li>Additional features</li>
+      <li>Useful links</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quia nobis iure debitis cumque quasi iusto assumenda obcaecati illo explicabo!</p>
+  </div>
+</div>
+
+
 
   <div class="link-container">
     <a routerLink="/" routerLinkActive="active" (click)="selectTab('home')">Home</a>
@@ -13,14 +78,15 @@
     <a routerLink="Techno4" routerLinkActive="active" (click)="selectTab('TypeScript')">TypeScript</a>
     <a routerLink="Techno5" routerLinkActive="active" (click)="selectTab('Angular')">Angular</a>
     <a routerLink="Techno6" routerLinkActive="active" (click)="selectTab('Java')">Java</a>
-    <a routerLink="login" routerLinkActive="active" (click)="selectTab('Login')">Login</a>
+    <a routerLink="signup" routerLinkActive="active" (click)="selectTab('signup')">Login</a>
   </div>
   
-  <router-outlet></router-outlet>
-  
-  <!-- Show app-cards only if showCards is true -->
-  <app-cards *ngIf="showCards"></app-cards>
+   <router-outlet></router-outlet>
   
 
+  <app-cards *ngIf="showCards"></app-cards>
+  <app-learn *ngIf="showlearn"></app-learn> 
+
+ 
 </div>
 
