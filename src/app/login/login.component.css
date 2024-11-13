@@ -72,3 +72,19 @@ form input[type="text"]:focus {
 .btn:hover {
     background-color: #040504;
 }
+
+.navigate{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+   
+   
+}
+
+.navigate:hover{
+    background-color: rgb(85, 94, 214);
+}
