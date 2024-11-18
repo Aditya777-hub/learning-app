@@ -15,7 +15,10 @@
 
 .active{
   background-color:rgb(37 39 70);
+  border-radius: 10px;
 }
+
+
 
 .link-container a:hover{
   text-decoration: underline;
