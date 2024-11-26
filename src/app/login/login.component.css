@@ -60,12 +60,10 @@ form input[type="password"] {
     border: 1px solid #ddd;
     border-radius: 4px;
     outline: none;
-    transition: border-color 0.3s;
+  
 }
 
-form input[type="text"]:focus {
-    border-color: #4CAF50;
-}
+
 
 /* Button styling */
 .btn {

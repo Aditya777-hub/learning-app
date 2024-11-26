@@ -11,6 +11,12 @@
 .link-container a {
     text-decoration: none; /* Remove underline from links */
     color: white; /* Link color */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.link-container a:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(82, 77, 77, 0.2);
 }
 
 .active{
@@ -20,10 +26,7 @@
 
 
 
-.link-container a:hover{
-  text-decoration: underline;
-  
-}
+
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
   color: white;
