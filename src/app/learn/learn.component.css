@@ -21,8 +21,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    max-width: 1200px;
+    max-width: 1350px;
     padding: 20px;
+    justify-content: space-evenly;
+    background-color: #1f1e28;
 }
 
 .card {
@@ -50,12 +52,14 @@
     font-size: 1.2rem;
     margin: 10px;
     color: #333;
+    text-align: center;
 }
 
 .card p {
     font-size: 0.95rem;
     margin: 10px;
     color: #555;
+    text-align: center;
 }
 
 .card button {
@@ -64,7 +68,7 @@
     padding: 8px 15px;
     font-size: 0.9rem;
     color: #fff;
-    background-color: #007bff;
+    background-color: rgb(37 39 70);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -72,5 +76,5 @@
 }
 
 .card button:hover {
-    background-color: #0056b3;
+    background-color: black;
 }
